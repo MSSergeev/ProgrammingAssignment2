@@ -1,7 +1,7 @@
-## This pair of functions caches the inverse of a given matrix
+## This pair of functions caches the inverse of a given matrix.
 ## Assumed that the supplied matrix is invertible.
 
-## This function creates a vector, which is a list containing a functions to
+## This function (makeCacheMatrix) creates a vector, which is a list containing a functions to
 ## 1. Set the given matrix,
 ## 2. Get the given matrix,
 ## 3. Set calculated inverse matrix,
@@ -22,9 +22,10 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## The following functions checks if the inverse matrix has already bean calculated.
-## And if it has, the function gets the inverse matrix from the cache.
-## Otherwise, it calculates the inverse matrix and stores it in cache via the put_inverse function.
+## The following function (cacheSolve) checks if the inverse matrix has already bean calculated.
+## And if it was, the function gets the inverse matrix from the cache.
+## Otherwise, it calculates the inverse matrix and stores it in the cache
+## via the put_inverse function.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
